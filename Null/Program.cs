@@ -14,6 +14,7 @@ namespace Null
             string test = null;
             string testTwo = null;
             test.IsNull(new Exception(),testTwo);
+            Console.WriteLine();
         }
     }
 }

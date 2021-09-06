@@ -21,7 +21,7 @@ namespace Null
             Check.IsNull(exception, insert);
         }
         static object objLock;
-        static X()
+        static CheckExt()
         {
             objLock = new object();
         }

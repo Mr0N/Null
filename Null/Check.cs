@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Null
 {
+ 
     class Check
     {
+        public static void IsNull(Exception exception, params object[] obj)
+        {
+            lock (obj)
+            {
+                if (check == null) check = new Check();
+            }
+            check._IsNull(()=>throw exception, obj);
+        }
         public static void IsNull(Action action, params object[] obj)
         {
             lock (obj)

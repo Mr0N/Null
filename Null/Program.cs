@@ -11,7 +11,9 @@ namespace Null
         }
         static void Main(string[] args)
         {
-            "".IsNull(new Exception(), "", "", null);
+            string test = null;
+            string testTwo = null;
+            test.IsNull(new Exception(),testTwo);
         }
     }
 }
